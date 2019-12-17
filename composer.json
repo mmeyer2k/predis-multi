@@ -1,0 +1,19 @@
+{
+    "name": "mmeyer2k/predis-multi",
+    "description": "A closure wrapper for predis transactions",
+    "tags": ["predis"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Meyer",
+            "email": "m.meyer2k@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+	"autoload": {
+        "files": ["predis-multi.php"]
+    },
+    "minimum-stability": "dev"
+}
