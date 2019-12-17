@@ -1,6 +1,6 @@
 <?php
 
-namespace \mmeyer2k\PredisMulti;
+namespace mmeyer2k\PredisMulti;
 
 class PredisMulti
 {
