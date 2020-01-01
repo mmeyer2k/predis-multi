@@ -11,6 +11,7 @@ composer require mmeyer2k/predis-multi
 ## Use
 
 Basic example of simply incrementing key:
+
 ```php
 use \mmeyer2k\PredisMulti\PredisMulti;
 
@@ -29,7 +30,8 @@ Rollback transaction by returning false from the closure.
 
 ```php
 $multi = PredisMulti::exec($redis, function() {
-  $redis->set('this-key-wont-ever-be-created');
+  $redis->touch('this-key-will-never-be-created');
+  
   return false;
 });
 ```
